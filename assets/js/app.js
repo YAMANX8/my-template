@@ -1,10 +1,7 @@
-function myFunction(){
-    let x = 0;
-    const obj = {
-        name: "yaman",
-        job: "software engineering"
-    };
-    return obj;
+function scrollBottom(elem) {
+    let scrollDown = elem.scrollHeight - elem.scrollTop - elem.clientHeight;
+    if (scrollDown == 0)
+        return false;
+    return scrollDown;
 }
-
-console.log(`${myFunction().name} I'm a ${myFunction().job} so, Hello World!!!`);
+setInterval(() => {console.log(scrollBottom(document.getElementById("elem")));},1000);
