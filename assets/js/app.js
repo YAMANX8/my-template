@@ -7,4 +7,4 @@ function myFunction(){
     return obj;
 }
 
-alert(`${myFunction().name} I'm a ${myFunction().job} so, Hello World!!!`);
+console.log(`${myFunction().name} I'm a ${myFunction().job} so, Hello World!!!`);
